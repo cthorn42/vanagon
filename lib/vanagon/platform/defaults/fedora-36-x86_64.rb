@@ -4,6 +4,9 @@ platform 'fedora-36-x86_64' do |plat|
   plat.servicetype 'systemd'
   plat.dist 'fc36'
 
+  plat.provision_with("yum install fedora-repos-rawhide -y")
+  plat.provision_with("yum install --enablerepo rawhide binutils -y")
+
   packages = %w[
     autoconf automake bzip2-devel gcc gcc-c++ libselinux-devel
     libsepol libsepol-devel make cmake pkgconfig readline-devel
