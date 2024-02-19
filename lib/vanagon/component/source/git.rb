@@ -1,10 +1,10 @@
+require 'pl_fustigit'
 require 'vanagon/utilities'
 require 'vanagon/errors'
 require 'vanagon/logger'
 # This stupid library requires a capital 'E' in its name
 # but it provides a wealth of useful constants
 require 'English'
-require 'fustigit'
 require 'git/basic_submodules'
 require 'logger'
 require 'timeout'
